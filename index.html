@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sform">
+    <h1>Survey Form</h1>
+    <h5>Thank you for taking the time to help us improve the platform</h5>
+    <form action="/submit" method="post">
+        <fieldset>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="age">Age(optional)</label>
+            <input type="number" id="age" name="age" placeholder="age" min="1" max="120" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="text">Which option best describes your current role?</label>
+            <select type="text">\
+                <option>Select current role</option>
+                <option>Citizen</option>
+                <option>Not Citizen</option>
+            </select>
+        </fieldset>
+
+        <label for="text">Would you recommended freeCodeCamp to a friend?</label>
+        <label>
+            <input type="radio" name="certainty" value="definitely" required>
+            Definitely
+        </label>
+
+        <label>
+            <input type="radio" name="certainty" value="maybe">
+            Maybe
+        </label>
+
+        <label>
+            <input type="radio" name="certainty" value="not_sure">
+            Not Sure
+        </label>
+
+        <fieldset>
+            <label for="text">What is your favorite feature of freeCodeCamp?</label>
+            <select type="text">
+                <option>Select an option</option>
+                <option>Easy</option>
+                <option>Medium</option>
+                <option>Hard</option>
+            </select>
+        </fieldset>
+        <label for="text">What would you like to see improve? (Check all that apply)</label>
+        <label>
+            <label><input type="checkbox" name="improve" value="Front-end Projects" id="improve" class="improve tre"> Front-end Projects</label>
+           <label><input type="checkbox" name="improve" value="Back-end Projects" id="improve" class="improve tre"> Back-end Projects</label>
+            <label><input type="checkbox" name="improve" value="Data Visualization" id="improve" class="improve tre"> Data Visualization</label>
+            <label><input type="checkbox" name="improve" value="Challenges" id="improve" class="improve tre"> Challenges</label>
+            <label><input type="checkbox" name="improve" value="Open Source Community" id="improve" class="improve tre"> Open Source Community</label>
+            <label><input type="checkbox" name="improve" value="Gitter help rooms" id="improve" class="improve tre"> Gitter help rooms</label>
+            <label><input type="checkbox" name="improve" value="Videos" id="improve" class="improve tre"> Videos</label>
+            <label><input type="checkbox" name="improve" value="City Meetups" id="improve" class="improve tre"> City Meetups</label>
+            <label><input type="checkbox" name="improve" value="Wiki" id="improve" class="improve tre"> Wiki</label>
+            <label><input type="checkbox" name="improve" value="Forum" id="improve" class="improve tre"> Forum</label>
+            <label><input type="checkbox" name="improve" value="Additional Courses" id="improve" class="improve tre"> Additional Courses</label>
+        </label>
+
+        <label for="text">Any comments or suggestions?</label>
+        <textarea class="comment-box" placeholder="Enter your comment here..."></textarea>
+
+        <button class="big-submit-button">Submit</button>
+
+        
+
+    </form>
+    </div>
+
+    <p>&copy September 2024</p>
+</body>
+</html>
